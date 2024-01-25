@@ -18,6 +18,8 @@ import { DirectiveComponent } from './directive/directive.component';
 import { MarksComponent } from './marks/marks.component';
 import { ShoppingComponent } from './shopping/shopping.component';
 import { PricePipe } from './price.pipe';
+import { EventComponent } from './event/event.component';
+import { CarsComponent } from './cars/cars.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,9 @@ import { PricePipe } from './price.pipe';
     DirectiveComponent,
     MarksComponent,
     ShoppingComponent,
-    PricePipe
+    PricePipe,
+    EventComponent,
+    CarsComponent
   ],
   imports: [
     BrowserModule,

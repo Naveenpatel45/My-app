@@ -13,6 +13,8 @@ import { BmiComponent } from './bmi/bmi.component';
 import { DirectiveComponent } from './directive/directive.component';
 import { MarksComponent } from './marks/marks.component';
 import { ShoppingComponent } from './shopping/shopping.component';
+import { EventComponent } from './event/event.component';
+import { CarsComponent } from './cars/cars.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -45,6 +47,12 @@ const routes: Routes = [
       },
       {
         path:'shopping', component:ShoppingComponent
+      },
+      {
+        path: 'event', component:EventComponent
+      },
+      {
+        path:'cars', component:CarsComponent
       }
     ],
   },
