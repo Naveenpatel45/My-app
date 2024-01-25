@@ -1,0 +1,23 @@
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: wheat;
+}
+.child{
+    height: 250px;
+    width: 250px;
+    background-color: aqua;
+    text-align: center;
+    border-radius: 20px;
+    border: 2px solid;
+
+}
+button{
+    height: 40px;
+    width: 70px;
+    margin: 2px;
+    background-color: orange;
+}

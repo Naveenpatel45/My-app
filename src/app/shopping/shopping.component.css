@@ -1,0 +1,49 @@
+.main{
+    height: 100%;
+    width: 100%;
+    
+
+}
+.top{
+    height: 30%;
+    width:100%;
+    background-color: rgb(58, 119, 116);
+    display: flex;
+   overflow: auto;
+}
+.bottom{
+    height: 70%;
+    width:100%;
+    background-color:rgb(75, 71, 71);
+}
+.topleft{
+    height: 100%;
+    width: 30%;
+   margin-left: 50px;
+   
+   
+   
+    
+}
+button{
+    height: fit-content;
+    width: fit-content;
+    /* background-color: orange; */
+    margin: 3px;
+    border: 1px solid;
+    border-radius: 10px;
+    font-size: small;
+
+}
+.topright{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+         
+}
+div input{
+    margin: 4px;
+}

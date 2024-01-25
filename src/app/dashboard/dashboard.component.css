@@ -1,0 +1,31 @@
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+.left{
+    height: 100%;
+    width: 20%;
+    background-color: aquamarine;
+    text-align: center;
+}
+.right{
+    height: 100%;
+    width: 80%;
+    background-color: rgb(179, 102, 8);
+    overflow: auto;
+
+}
+.logout{
+    background-color: red;
+    height: 40px;
+    width: 80px;
+    border: 1;
+    border-radius: 10px;
+
+
+}
+.items h4:hover{
+    background-color: rgb(124, 124, 129);
+}
+

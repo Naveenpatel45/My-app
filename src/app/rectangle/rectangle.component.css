@@ -1,0 +1,19 @@
+ .main{
+    height:100%;
+    width:100%;
+    /* background-color: brown; */
+    text-align: center;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+
+ }
+ .child
+ {
+    height: 250px;
+   width: 250px;
+   background-color: white;
+   padding: 10px;
+ }
+ 
+ 

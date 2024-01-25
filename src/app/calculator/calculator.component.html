@@ -1,0 +1,17 @@
+<div class="main">
+    <div class="child">
+        <h1>Calculator</h1>
+        <label for="number">Number1:</label>
+        <input type="number" [(ngModel)]="num1">
+        <br><br>
+        <label for="number">Number2:</label>
+        <input type="number" [(ngModel)]="num2">
+        <br><br>
+        <button (click)="sum()">SUM</button>
+        <button (click)="sub()">SUB</button>
+        <button (click)="mul()">MUL</button>
+        <button (click)="div()">DIV</button>
+        <br>
+        <h1>Result is :{{result}}</h1>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div class="main">
+    <div class="child">
+        <p>data-binding works!</p>
+        <p>my age is {{age}}</p>
+        <p>my name is {{name}}</p>
+
+        <p> ages: {{ages}}</p>
+        <p> names: {{names}}</p>
+
+        <p>User: {{user}}</p>
+        <br><br>
+
+        <button (click)="submit()">Submit:</button>
+
+
+        <input type="text" (keypress)="key()">
+        <br>
+        <label for="phone">phone:</label>
+        <input type="text" [(ngModel)]="phone">
+
+        <ins>
+            <p>{{phone}}</p>
+        </ins>
+    </div>
+</div>

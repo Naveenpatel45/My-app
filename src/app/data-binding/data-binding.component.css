@@ -1,0 +1,14 @@
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(150, 73, 73);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.child{
+    height: 60%;
+    width: 50%;
+    background-color: white;
+}

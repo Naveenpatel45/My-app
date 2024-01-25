@@ -1,0 +1,32 @@
+<h1 *ngIf="true">DIRECTIVES</h1>
+<h1 *ngFor="let age of ages">my age is{{age}}</h1>
+
+<ol>
+    <li *ngFor="let state of states">{{state}}</li>
+</ol>
+<select name="" id="">
+    <option *ngFor="let state of states">{{state}}></option>
+</select>
+
+<h1 *ngFor="let user of users">My Name is {{user.name}} with age{{user.age}} and phone is{{user.phone}}</h1>
+<table border="1">
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>phone</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of users">
+        <td>{{user.name}}</td>
+        <td>{{user.age}}</td>
+        <td>{{user.phone}}</td>
+    </tr>
+    </tbody>
+</table>
+<div class="card" *ngFor="let user of users">
+    <h1>Name:{{user.name}}</h1>
+    <h1>Age:{{user.age}}</h1>
+</div>
