@@ -1,5 +1,9 @@
 <div class="main">
-    <div *ngFor="let item of mails">
-    
+    <div *ngFor="let item of mails" class="items">
+        <div class="lines" [ngStyle]="{'color':item.completed?'grey':'black'}">
+            <b>{{item.title}}</b>
+            {{item.completed}}
+        </div>
+
     </div>
 </div>
