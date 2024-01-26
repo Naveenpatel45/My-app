@@ -19,6 +19,7 @@ import { VehicleComponent } from './vehicle/vehicle.component';
 import { AccountsComponent } from './accounts/accounts.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
 import { MailComponent } from './mail/mail.component';
+import { BoredomComponent } from './boredom/boredom.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -70,6 +71,9 @@ const routes: Routes = [
       {
         path: 'mail', component:MailComponent
       },
+      {
+        path: 'boredom', component:BoredomComponent
+      }
     ],
   },
   { path: '', component: LoginComponent },
