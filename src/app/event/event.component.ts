@@ -6,14 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./event.component.css']
 })
 export class EventComponent {
-  public ent :any= {name:""}
-  public entrys :any=[{name:'SAI'}]
+  public ent: any = { name: "" }
+  public entrys: any = [{ name: 'SAI' }]
 
-  enter(){
+  enter() {
     this.entrys.push(this.ent)
   }
-  del(i:number){
-    this.entrys.splice(i,1)
+  del(i: number) {
+    this.entrys.splice(i, 1)
 
   }
 }

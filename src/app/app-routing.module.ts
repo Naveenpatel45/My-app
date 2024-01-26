@@ -15,6 +15,8 @@ import { MarksComponent } from './marks/marks.component';
 import { ShoppingComponent } from './shopping/shopping.component';
 import { EventComponent } from './event/event.component';
 import { CarsComponent } from './cars/cars.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import { AccountsComponent } from './accounts/accounts.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -53,6 +55,12 @@ const routes: Routes = [
       },
       {
         path:'cars', component:CarsComponent
+      },
+      {
+        path: 'vehicle', component:VehicleComponent
+      },
+      {
+        path: 'accounts', component:AccountsComponent
       }
     ],
   },

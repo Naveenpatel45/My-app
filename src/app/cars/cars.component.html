@@ -1,19 +1,19 @@
 <div class="main">
-  <div class="child">
-    <h2>Cars</h2>
+    <div class="child">
+        <h2>Cars</h2>
 
-    <label (click)="car(1)" for="">MUSTANG</label>
-    <input type="radio" name="ty" id=""  (click)="car(1)" >
-    
-    <label (click)="car(2)">BMW</label>
-    <input type="radio" name="ty" id=""  (click)="car(2)" >
-    
-    <label (click)="car(3)" for="">AUDI</label>
-    <input type="radio" name="ty" id=""  (click)="car(3)">
-    <br>
-    <img  height="300px" width="350px" src="./../../assets/mustang.jpeg.jpg" alt="" *ngIf="this.value==1">
-    <img  height="300px" width="350px" src="./../../assets/BMW.jpeg.jpg" alt=""*ngIf="this.value==2" >
-    <img  height="300px" width="350px" src="./../../assets/audi.jpeg" alt=""*ngIf="this.value==3">
-  </div>
+        <label (click)="car(1)" for="">MUSTANG</label>
+        <input type="radio" name="ty" id="" (click)="car(1)">
+
+        <label (click)="car(2)">BMW</label>
+        <input type="radio" name="ty" id="" (click)="car(2)">
+
+        <label (click)="car(3)" for="">AUDI</label>
+        <input type="radio" name="ty" id="" (click)="car(3)">
+        <br>
+        <img height="300px" width="350px" src="./../../assets/mustang.jpeg.jpg" alt="" *ngIf="this.value==1">
+        <img height="300px" width="350px" src="./../../assets/BMW.jpeg.jpg" alt="" *ngIf="this.value==2">
+        <img height="300px" width="350px" src="./../../assets/audi.jpeg" alt="" *ngIf="this.value==3">
+    </div>
 
 </div>

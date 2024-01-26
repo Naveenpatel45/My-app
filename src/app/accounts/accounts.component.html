@@ -1,0 +1,24 @@
+<div class="main">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>account name</th>
+                <th>avaialable_balance</th>
+                <th>account number</th>
+                <th>city</th>
+                <th>profile picture</th>
+                <th>id</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let account of accounts">
+                <td>{{account.account_name}}</td>
+                <td>{{account.available_balance}}</td>
+                <td>{{account.account_number}}</td>
+                <td>{{account.city}}</td>
+                <td><img height="100px" width="100px" src="{{account.profie_picture}}" alt=""></td>
+                <td>{{account.id}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

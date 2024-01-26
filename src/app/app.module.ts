@@ -20,6 +20,9 @@ import { ShoppingComponent } from './shopping/shopping.component';
 import { PricePipe } from './price.pipe';
 import { EventComponent } from './event/event.component';
 import { CarsComponent } from './cars/cars.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import{HttpClientModule} from '@angular/common/http';
+import { AccountsComponent } from './accounts/accounts.component';
 
 @NgModule({
   declarations: [
@@ -39,12 +42,15 @@ import { CarsComponent } from './cars/cars.component';
     ShoppingComponent,
     PricePipe,
     EventComponent,
-    CarsComponent
+    CarsComponent,
+    VehicleComponent,
+    AccountsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
