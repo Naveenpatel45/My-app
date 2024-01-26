@@ -26,6 +26,7 @@ import { AccountsComponent } from './accounts/accounts.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
 import { MailComponent } from './mail/mail.component';
 import { BoredomComponent } from './boredom/boredom.component';
+import { PhotosComponent } from './photos/photos.component';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { BoredomComponent } from './boredom/boredom.component';
     AccountsComponent,
     FlipkartComponent,
     MailComponent,
-    BoredomComponent
+    BoredomComponent,
+    PhotosComponent
   ],
   imports: [
     BrowserModule,

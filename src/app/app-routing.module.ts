@@ -20,6 +20,7 @@ import { AccountsComponent } from './accounts/accounts.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
 import { MailComponent } from './mail/mail.component';
 import { BoredomComponent } from './boredom/boredom.component';
+import { PhotosComponent } from './photos/photos.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -73,6 +74,9 @@ const routes: Routes = [
       },
       {
         path: 'boredom', component:BoredomComponent
+      },
+      {
+        path: 'photos', component:PhotosComponent
       }
     ],
   },

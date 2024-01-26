@@ -1,0 +1,12 @@
+.main{
+    height: auto;
+    width: 100%;
+    background-color: white;
+}
+
+.gallery{
+    height: 100%;
+    width: 100%;
+    margin: 3px;
+    
+}

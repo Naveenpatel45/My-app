@@ -6,8 +6,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class BoredomService {
-
-  constructor(private _httpClient:HttpClient) { }
+constructor(private _httpClient:HttpClient)
+   { }
   getboredom():Observable<any>{
     return this._httpClient.get("https://www.boredapi.com/api/activity ");
   }
