@@ -1,0 +1,31 @@
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(93, 202, 232);
+    display: flex;
+     flex-wrap: wrap;
+    overflow: auto;
+     margin: 0;
+     justify-content: space-evenly;
+}
+.products{
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    border-left: 2px solid black;
+    margin: 3px;
+    text-align: center;
+    overflow: hidden;
+
+}
+.products:hover{
+    height: auto;
+}
+.top{
+    height: 10%;
+    width: 100%;
+}
+.tleft{
+    height: 100%;
+    width: 20%;
+}

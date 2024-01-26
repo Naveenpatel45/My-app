@@ -17,6 +17,8 @@ import { EventComponent } from './event/event.component';
 import { CarsComponent } from './cars/cars.component';
 import { VehicleComponent } from './vehicle/vehicle.component';
 import { AccountsComponent } from './accounts/accounts.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
+import { MailComponent } from './mail/mail.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -61,7 +63,13 @@ const routes: Routes = [
       },
       {
         path: 'accounts', component:AccountsComponent
-      }
+      },
+      {
+        path: 'flipkart', component:FlipkartComponent
+      },
+      {
+        path: 'mail', component:MailComponent
+      },
     ],
   },
   { path: '', component: LoginComponent },

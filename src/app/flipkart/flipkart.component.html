@@ -1,0 +1,19 @@
+<div class="top">
+    <div class="tleft"><img height="60px" width="125px" src="./../../assets/flip.jpg" alt=""></div>
+
+</div>
+<div class="main">
+    
+    <div class="products" *ngFor="let flip of flipkart">
+         <div>  <img height="200px" width="200px" src="{{flip.image}}" alt=""></div>
+         {{flip.id}}
+         {{flip.title}} <br>
+         {{flip.price}} <br>
+         {{flip.description}} <br>
+         {{flip.category}} <br>
+         <div class="rating">
+            {{flip.rate}}
+            {{flip.count}}
+         </div>
+        </div>
+</div>

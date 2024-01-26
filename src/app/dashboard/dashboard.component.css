@@ -2,12 +2,14 @@
     height: 100vh;
     width: 100vw;
     display: flex;
+    
 }
 .left{
     height: 100%;
     width: 20%;
     background-color: aquamarine;
     text-align: center;
+    overflow: auto;
 }
 .right{
     height: 100%;
