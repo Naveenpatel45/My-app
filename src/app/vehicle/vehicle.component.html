@@ -1,4 +1,23 @@
 <div class="main">
+    <input type="text" name="" id="" placeholder="search" [(ngModel)]="term" (keyup)="filter()">
+    <!-- <button (click)="filter()">filter</button> -->
+    <select name="" id="" [(ngModel)]="column">
+        <option >color</option>
+        <option >fuel</option>
+    </select>
+    <select name="" id="" [(ngModel)]="order">
+        <option value="asc">Ascending order</option>
+        <option value="desc">Descending order</option>
+    </select>
+    <button (click)="sort()">sort</button>
+    <label>select page</label>
+    <select [(ngModel)]="page" (change)="pagination()">
+        <option >1</option>
+        <option >2</option>
+        <option >3</option>
+        <option >4</option>
+        <option >5</option>
+    </select>
     <table>
         <thead>
          <tr>
@@ -10,6 +29,7 @@
             <th>color</th>
             <th>image</th>
             <th>id</th>
+            <th>actions</th>
          </tr>
            
 
@@ -24,6 +44,7 @@
                 <td>{{vehicle.color}}</td>
                 <td><img height="100px" width="100px" src="{{vehicle.image}}" alt=""></td>
                 <td>{{vehicle.id}}</td>
+                <td><button class="btn btn-danger" (click)="delete(vehicle.id)">delete</button></td>
             </tr>
         </tbody>
     </table>

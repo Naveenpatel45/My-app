@@ -27,6 +27,8 @@ import { FlipkartComponent } from './flipkart/flipkart.component';
 import { MailComponent } from './mail/mail.component';
 import { BoredomComponent } from './boredom/boredom.component';
 import { PhotosComponent } from './photos/photos.component';
+import { EmployeComponent } from './employe/employe.component';
+import { StudentComponent } from './student/student.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +54,9 @@ import { PhotosComponent } from './photos/photos.component';
     FlipkartComponent,
     MailComponent,
     BoredomComponent,
-    PhotosComponent
+    PhotosComponent,
+    EmployeComponent,
+    StudentComponent
   ],
   imports: [
     BrowserModule,

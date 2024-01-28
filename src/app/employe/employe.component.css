@@ -1,0 +1,21 @@
+.main{
+    height: 100%;
+    width: 100%;
+   
+}
+.top{
+    height: 30%;
+    width: 100%;
+    background-color: aquamarine;
+    
+   
+}
+.top button{
+    margin: 5px;
+    border: 2px solid grey;
+}
+.bottom{
+     height: 70%;
+     width: 100%;
+     background-color: bisque;
+}

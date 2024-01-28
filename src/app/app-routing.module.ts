@@ -21,6 +21,9 @@ import { FlipkartComponent } from './flipkart/flipkart.component';
 import { MailComponent } from './mail/mail.component';
 import { BoredomComponent } from './boredom/boredom.component';
 import { PhotosComponent } from './photos/photos.component';
+import { EmployeComponent } from './employe/employe.component';
+import { StudentService } from './student.service';
+import { StudentComponent } from './student/student.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -61,6 +64,9 @@ const routes: Routes = [
         path:'cars', component:CarsComponent
       },
       {
+        path:'employe', component:EmployeComponent
+      },
+      {
         path: 'vehicle', component:VehicleComponent
       },
       {
@@ -77,6 +83,9 @@ const routes: Routes = [
       },
       {
         path: 'photos', component:PhotosComponent
+      },
+      {
+        path: 'student', component:StudentComponent
       }
     ],
   },
