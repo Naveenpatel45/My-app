@@ -9,7 +9,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { CircleComponent } from './circle/circle.component';
@@ -29,6 +29,8 @@ import { BoredomComponent } from './boredom/boredom.component';
 import { PhotosComponent } from './photos/photos.component';
 import { EmployeComponent } from './employe/employe.component';
 import { StudentComponent } from './student/student.component';
+import { CreatevehicleComponent } from './createvehicle/createvehicle.component';
+import { CreatestudentComponent } from './createstudent/createstudent.component';
 
 @NgModule({
   declarations: [
@@ -56,13 +58,16 @@ import { StudentComponent } from './student/student.component';
     BoredomComponent,
     PhotosComponent,
     EmployeComponent,
-    StudentComponent
+    StudentComponent,
+    CreatevehicleComponent,
+    CreatestudentComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

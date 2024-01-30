@@ -20,16 +20,20 @@
             <option>3</option>
             <option>4</option>
         </select>
+        <marquee behavior="" direction="left">Naveen Patel</marquee>
+   
+        
     </div>
 </div>
 <div class="main">
 
     <div *ngFor="let item of students" class="card">
-        <img height="100px" width="100px" style="margin: auto;" src="{{item.image}}" alt=""> <br>
-        <h2> {{item.name}}</h2> <br>
+        <img height="100px" width="100px" style="margin: auto;" src="{{item.image}}" alt=""> 
+        <b> {{item.name}}</b>
         {{item.phone}} <br>
         {{item.city}} <br>
-        {{item.fee}} <br>
-        {{item.id}}
+        {{item.fee}} <br> 
+        {{item.id}} <br>
+        <div class="but"> <button class="btn btn-danger" (click)="delete(item.id)">delete</button></div>
     </div>
 </div>

@@ -11,7 +11,8 @@ export class StudentComponent {
   public term: any = ""
   public column: any = ""
   public order: any = ""
-  public page: any=0
+  public page: any = 0
+ 
 
 
   constructor(private _studentService: StudentService) {
@@ -45,13 +46,24 @@ export class StudentComponent {
     )
 
   }
-  pagination(){
-    this ._studentService.getpagedstudents(this.page).subscribe(
+  pagination() {
+    this._studentService.getpagedstudents(this.page).subscribe(
+      (data: any) => {
+        this.students = data
+      },
+      (err: any) => {
+        alert("Internal server Error")
+      }
+    )
+  }
+  delete(id:number) {
+    this._studentService.deletedStudents(id).subscribe(
       (data:any)=>{
-        this.students=data
+        alert(data.name +"deleted successfully");
+      location.reload();
       },
       (err:any)=>{
-        alert("Internal server Error")
+        alert("Internal Server Error")
       }
     )
   }

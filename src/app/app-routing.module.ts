@@ -24,6 +24,7 @@ import { PhotosComponent } from './photos/photos.component';
 import { EmployeComponent } from './employe/employe.component';
 import { StudentService } from './student.service';
 import { StudentComponent } from './student/student.component';
+import { CreatevehicleComponent } from './createvehicle/createvehicle.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -86,7 +87,8 @@ const routes: Routes = [
       },
       {
         path: 'student', component:StudentComponent
-      }
+      },
+      {path: 'createvehicle', component:CreatevehicleComponent}
     ],
   },
   { path: '', component: LoginComponent },

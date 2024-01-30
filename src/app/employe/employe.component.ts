@@ -15,7 +15,14 @@ export class EmployeComponent {
     { Sno: 6, name: "Suraj", company: "GENPACT", Experience: 4, package: 1500000, workingemploye: "true" }
   ]
  explh(){
- 
+ this.employes=this.employes.sort((a:any,b:any)=>(a.Experience-b.Experience))
   
  }
+ exphl(){
+  this.employes=this.employes.sort((a:any,b:any)=>(b.Experience-a.Experience))
+   
+  }
+  filter(){
+    this.employes = this.employes.filter((item: any) => item.name.includes(this.employes))
+  }
 }

@@ -1,0 +1,27 @@
+<div class="main">
+    <form [formGroup]="vehiclesform">
+        <label for="">Vehicle:</label>
+        <input type="text" formControlName="Vehicle">
+        <br>
+        <label for="">manufacturer:</label>
+        <input type="text"  formControlName="manufacturer">
+        <br>
+        <label for="">model:</label>
+        <input type="text"  formControlName="model">
+        <br>
+        <label for="">type:</label>
+        <input type="text"  formControlName="type">
+        <br>
+        <label for="">fuel:</label>
+        <input type="text"  formControlName="fuel">
+        <br>
+        <label for="">color:</label>
+        <input type="text"  formControlName="color">
+        <br>
+        <label for="">image:</label>
+        <input type="text"  formControlName="image">
+        <br>
+       
+        <button class="btn btn-info" (click)="submit()">Submit</button>
+    </form>
+</div>

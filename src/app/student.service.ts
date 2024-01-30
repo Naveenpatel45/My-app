@@ -20,6 +20,9 @@ export class StudentService {
   getpagedstudents(page: number): Observable<any> {
     return this._httpClient.get("https://6128991386a213001729f9df.mockapi.io/test/v1/student?limit=10&page=" + page)
   }
+  deletedStudents(id:number ):Observable<any>{
+    return this._httpClient.delete("https://6128991386a213001729f9df.mockapi.io/test/v1/student/"+id)
+  }
 
 
 }
