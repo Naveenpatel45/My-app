@@ -1,1 +1,21 @@
-<p>createstudent works!</p>
+<div class="main">
+  <form [formGroup]="studentForm">
+    <label for="">name:</label>
+    <input type="text" formControlName="name">
+    <br>
+    <label for="">phone:</label>
+    <input type="text" formControlName="phone">
+    <br>
+    <label for="">city:</label>
+    <input type="text" formControlName="city">
+    <br>
+    <label for="">fee:</label>
+    <input type="text" formControlName="fee">
+    <br>
+    <label for="">image:</label>
+    <input type="text" formControlName="image">
+    <br>
+
+    <button class="btn btn-info" (click)="submit()">Submit</button>
+  </form>
+</div>

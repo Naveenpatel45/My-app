@@ -1,0 +1,22 @@
+<div class="main">
+    <h1>Create Account</h1>
+    <form [formGroup]="accountForm">
+        <label for=""> account_name:</label>
+        <input type="text" formControlName="account_name">
+        <br>
+        <label for="">avaialable_balance:</label>
+        <input type="text" formControlName="avaialable_balance">
+        <br>
+        <label for="">accountnumber:</label>
+        <input type="text" formControlName="account_number">
+        <br>
+        <label for="">profilepicture:</label>
+        <input type="text" formControlName="profile_picture">
+        <br>
+        <label for="">city:</label>
+        <input type="text" formControlName="city">
+        <br>
+    
+        <button class="btn btn-info" (click)="submit()">Submit</button>
+    </form>
+</div>

@@ -1,9 +1,9 @@
-.main {
-    height: 100vh;
+.main{
     background-color: white;
-}
+    height: 100vh;
 
-label {
+}
+label{
     display: inline-block;
-    width: 120px;
+    width: 150px;
 }

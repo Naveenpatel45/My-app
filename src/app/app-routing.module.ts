@@ -25,6 +25,8 @@ import { EmployeComponent } from './employe/employe.component';
 import { StudentService } from './student.service';
 import { StudentComponent } from './student/student.component';
 import { CreatevehicleComponent } from './createvehicle/createvehicle.component';
+import { CreatestudentComponent } from './createstudent/createstudent.component';
+import { CreateaccountComponent } from './createaccount/createaccount.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -33,62 +35,66 @@ const routes: Routes = [
       { path: 'home', component: HomeComponent },
       { path: '', component: HomeComponent },
       {
-        
-        path:'about', component:AboutComponent
+
+        path: 'about', component: AboutComponent
       },
-      {path:'data-binding', component:DataBindingComponent},
+      { path: 'data-binding', component: DataBindingComponent },
       {
         path: 'calculator', component: CalculatorComponent
       },
       {
-        path:'rectangle', component: RectangleComponent
+        path: 'rectangle', component: RectangleComponent
       },
       {
-        path:'circle', component: CircleComponent
+        path: 'circle', component: CircleComponent
       },
       {
-        path:'bmi', component: BmiComponent
+        path: 'bmi', component: BmiComponent
       },
       {
-        path:'directive', component:DirectiveComponent
+        path: 'directive', component: DirectiveComponent
       },
       {
-        path:'marks', component:MarksComponent
+        path: 'marks', component: MarksComponent
       },
       {
-        path:'shopping', component:ShoppingComponent
+        path: 'shopping', component: ShoppingComponent
       },
       {
-        path: 'event', component:EventComponent
+        path: 'event', component: EventComponent
       },
       {
-        path:'cars', component:CarsComponent
+        path: 'cars', component: CarsComponent
       },
       {
-        path:'employe', component:EmployeComponent
+        path: 'employe', component: EmployeComponent
       },
       {
-        path: 'vehicle', component:VehicleComponent
+        path: 'vehicle', component: VehicleComponent
       },
       {
-        path: 'accounts', component:AccountsComponent
+        path: 'accounts', component: AccountsComponent
       },
       {
-        path: 'flipkart', component:FlipkartComponent
+        path: 'flipkart', component: FlipkartComponent
       },
       {
-        path: 'mail', component:MailComponent
+        path: 'mail', component: MailComponent
       },
       {
-        path: 'boredom', component:BoredomComponent
+        path: 'boredom', component: BoredomComponent
       },
       {
-        path: 'photos', component:PhotosComponent
+        path: 'photos', component: PhotosComponent
       },
       {
-        path: 'student', component:StudentComponent
+        path: 'student', component: StudentComponent
       },
-      {path: 'createvehicle', component:CreatevehicleComponent}
+      { path: 'createvehicle', component: CreatevehicleComponent },
+      { path: 'createstudent', component: CreatestudentComponent },
+      {
+        path: 'createaccount', component:CreateaccountComponent
+      }
     ],
   },
   { path: '', component: LoginComponent },
