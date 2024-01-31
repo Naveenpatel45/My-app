@@ -27,11 +27,12 @@ import { StudentComponent } from './student/student.component';
 import { CreatevehicleComponent } from './createvehicle/createvehicle.component';
 import { CreatestudentComponent } from './createstudent/createstudent.component';
 import { CreateaccountComponent } from './createaccount/createaccount.component';
+import { AuthenticationGuard } from './authentication.guard';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   {
-    path: 'dashboard', component: DashboardComponent, children: [
+    path: 'dashboard',  canActivate:[AuthenticationGuard], component: DashboardComponent, children: [
       { path: 'home', component: HomeComponent },
       { path: '', component: HomeComponent },
       {

@@ -12,20 +12,22 @@
     background-color: white;
     padding: 20px;
     text-align: center;
-    background-color: rgb(107, 107, 187);
+    background-color: rgb(156, 156, 194);
     border: 2px solid black;
      border-radius:15px ;
 }
-button{
+/* button{
     height: 30px;
     width: 60px;
     background-color: brown;
-}
+} */
 input{
     border: 1px solid brown;
     border-radius: 4px;
     
    }
    label{
+        display: inline-block;
        color:whitesmoke;
+       width: 100px;
    }
