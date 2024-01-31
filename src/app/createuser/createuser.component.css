@@ -1,0 +1,22 @@
+
+.main{
+    height: 100%;
+    background-color: white;
+    overflow: auto;
+   
+   
+}
+label{
+    display: block;
+    width: 120px;
+    margin: 5px;
+}
+input{
+    border: 2px solid grey;
+}
+button{
+    margin: 3px;
+}
+.errors{
+    color: red;
+}
