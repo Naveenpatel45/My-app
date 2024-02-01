@@ -29,6 +29,7 @@ import { CreatestudentComponent } from './createstudent/createstudent.component'
 import { CreateaccountComponent } from './createaccount/createaccount.component';
 import { AuthenticationGuard } from './authentication.guard';
 import { CreateuserComponent } from './createuser/createuser.component';
+import { CreatetaskComponent } from './createtask/createtask.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -99,6 +100,9 @@ const routes: Routes = [
       },
       {
         path: 'createuser', component:CreateuserComponent
+      },
+      {
+        path: 'createtask', component:CreatetaskComponent
       }
     ],
   },

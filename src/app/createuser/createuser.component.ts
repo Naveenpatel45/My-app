@@ -20,7 +20,7 @@ export class CreateuserComponent {
     }),
     cards: new FormArray([]),
     type: new FormControl(),
-    buafee: new FormControl(),
+    busfee: new FormControl(),
     hostelfee: new FormControl(),
 
   })

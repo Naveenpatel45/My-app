@@ -33,6 +33,7 @@ import { CreatevehicleComponent } from './createvehicle/createvehicle.component'
 import { CreatestudentComponent } from './createstudent/createstudent.component';
 import { CreateaccountComponent } from './createaccount/createaccount.component';
 import { CreateuserComponent } from './createuser/createuser.component';
+import { CreatetaskComponent } from './createtask/createtask.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { CreateuserComponent } from './createuser/createuser.component';
     CreatevehicleComponent,
     CreatestudentComponent,
     CreateaccountComponent,
-    CreateuserComponent
+    CreateuserComponent,
+    CreatetaskComponent
   ],
   imports: [
     BrowserModule,
