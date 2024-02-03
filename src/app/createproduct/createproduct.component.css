@@ -1,0 +1,71 @@
+
+
+.main{
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+  
+    background-color: rgb(242, 247, 233);
+}
+.parent{
+    height: 80%;
+    width: 100%;
+    display: flex;
+}
+.left
+{
+    height: 100%;
+    width: 35%;
+    background-color: rgb(108, 231, 231);
+
+}
+.lefttop{
+    height: 50%;
+    width: 100%;
+    background-color: rgb(134, 165, 42);
+    overflow: auto;
+}
+.leftbottom{
+    height: 50%;
+    width: 100%;
+    background-color: rgb(138, 134, 134);
+    overflow: auto;
+}
+.right{
+height: 100%;
+width: 65%;
+background-color: rgb(144, 123, 212);
+}
+.righttop1{
+    height: 37%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgb(219, 164, 122);
+
+}
+.righttop2{
+    height: 37%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgb(230, 162, 214);
+}
+label{
+    display: inline-block;
+    width: 100px;
+}
+.radio{
+    height: 26%;
+    width: 100%;
+    background-color: rgb(142, 83, 83);
+}
+.error{
+    color: red;
+}
+.last{
+    height: 10%;
+    width: 100%;
+}
+.title{
+    height: 10%;
+    width: 100%;
+}

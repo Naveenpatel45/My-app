@@ -11,6 +11,10 @@ export class StudentService {
   getStudents(): Observable<any> {
     return this._httpClient.get("https://6128991386a213001729f9df.mockapi.io/test/v1/student")
   }
+
+  getStudent(id:string): Observable<any> {
+    return this._httpClient.get("https://6128991386a213001729f9df.mockapi.io/test/v1/student/"+id)
+  }
   createstudent(data: any): Observable<any> {
     return this._httpClient.post("https://6128991386a213001729f9df.mockapi.io/test/v1/student", data)
   }
@@ -25,6 +29,10 @@ export class StudentService {
   }
   deletedStudents(id: number): Observable<any> {
     return this._httpClient.delete("https://6128991386a213001729f9df.mockapi.io/test/v1/student/" + id)
+  }
+
+  updateStudent(id: string, data:any): Observable<any> {
+    return this._httpClient.put("https://6128991386a213001729f9df.mockapi.io/test/v1/student/" + id,data)
   }
 
 

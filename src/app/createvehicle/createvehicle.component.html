@@ -1,4 +1,6 @@
 <div class="main">
+    <h2 *ngIf="!id">CREATE VEHICLE</h2>
+    <h2 *ngIf="id">update vehicle</h2>
     <form [formGroup]="vehiclesform">
         <label for="">Vehicle:</label>
         <input type="text" formControlName="Vehicle">
@@ -22,6 +24,6 @@
         <input type="text"  formControlName="image">
         <br>
        
-        <button class="btn btn-info" (click)="submit()">Submit</button>
+        <button class="btn btn-info" (click)="submit()">{{id ? 'update ': 'create'}}</button>
     </form>
 </div>

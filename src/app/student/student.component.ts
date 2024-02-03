@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { StudentService } from '../student.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-student',
@@ -15,7 +16,7 @@ export class StudentComponent {
  
 
 
-  constructor(private _studentService: StudentService) {
+  constructor(private _studentService: StudentService, private _router:Router) {
     _studentService.getStudents().subscribe(
       (data: any) => {
         this.students = data
@@ -66,5 +67,8 @@ export class StudentComponent {
         alert("Internal Server Error")
       }
     )
+  }
+  edit(id:number){
+     this._router.navigateByUrl("/dashboard/edit-student/"+id)
   }
 }

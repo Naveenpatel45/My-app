@@ -34,6 +34,9 @@
         {{item.city}} <br>
         {{item.fee}} <br> 
         {{item.id}} <br>
-        <div class="but"> <button class="btn btn-danger" (click)="delete(item.id)">delete</button></div>
+
+        <div class="but"> <button class="btn btn-danger" (click)="delete(item.id)">delete</button>
+            <button class="btn btn-primary" nj (click)="edit(item.id)">Edit</button>
+        </div>
     </div>
 </div>

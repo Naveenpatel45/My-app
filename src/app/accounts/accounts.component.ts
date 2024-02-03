@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AccountsService } from '../accounts.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-accounts',
@@ -8,7 +9,7 @@ import { AccountsService } from '../accounts.service';
 })
 export class AccountsComponent {
   public accounts: any=[];
-  constructor(private _accountService:AccountsService){
+  constructor(private _accountService:AccountsService, private _router:Router){
     _accountService.getaccounts().subscribe(
       (data:any)=>{
         this.accounts=data;
@@ -17,5 +18,19 @@ export class AccountsComponent {
         alert("Internal server error")
       }
     )
+  }
+  delete(id:any){
+   this._accountService.deleteaccount(id).subscribe(
+    (data:any)=>{
+      alert(data.account_name +"deleted successfully");
+    location.reload();
+    },
+    (err:any)=>{
+      alert("Internal Server Error")
+    }
+  )
+  }
+  edit(id:string){
+this._router.navigateByUrl("/dashboard/edit-account/"+id)
   }
 }

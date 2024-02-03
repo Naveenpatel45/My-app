@@ -44,6 +44,7 @@
                 <td>{{vehicle.color}}</td>
                 <td><img height="100px" width="100px" src="{{vehicle.image}}" alt=""></td>
                 <td>{{vehicle.id}}</td>
+                <td><button class="btn btn-warning" (click)="edit(vehicle.id)">EDIT</button></td>
                 <td><button class="btn btn-danger" (click)="delete(vehicle.id)">delete</button></td>
             </tr>
         </tbody>

@@ -34,6 +34,10 @@ import { CreatestudentComponent } from './createstudent/createstudent.component'
 import { CreateaccountComponent } from './createaccount/createaccount.component';
 import { CreateuserComponent } from './createuser/createuser.component';
 import { CreatetaskComponent } from './createtask/createtask.component';
+import { CreateproductComponent } from './createproduct/createproduct.component';
+import { ProductComponent } from './product/product.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +70,11 @@ import { CreatetaskComponent } from './createtask/createtask.component';
     CreatestudentComponent,
     CreateaccountComponent,
     CreateuserComponent,
-    CreatetaskComponent
+    CreatetaskComponent,
+    CreateproductComponent,
+    ProductComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

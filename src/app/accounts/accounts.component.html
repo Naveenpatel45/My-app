@@ -1,4 +1,5 @@
 <div class="main">
+  
     <table class="table">
         <thead>
             <tr>
@@ -17,7 +18,9 @@
                 <td>{{account.account_number}}</td>
                 <td>{{account.city}}</td>
                 <td><img height="100px" width="100px" src="{{account.profie_picture}}" alt=""></td>
-                <td>{{account.id}}</td>
+                <td>{{account.id}}</td> <br>
+                <button class="btn btn-danger" (click)="delete(account.id)">Delete</button>
+                <button class="btn btn-warning" (click)="edit(account.id)">EDIT</button>
             </tr>
         </tbody>
     </table>

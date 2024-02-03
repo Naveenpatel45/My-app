@@ -30,6 +30,9 @@ import { CreateaccountComponent } from './createaccount/createaccount.component'
 import { AuthenticationGuard } from './authentication.guard';
 import { CreateuserComponent } from './createuser/createuser.component';
 import { CreatetaskComponent } from './createtask/createtask.component';
+import { CreateproductComponent } from './createproduct/createproduct.component';
+import { ProductComponent } from './product/product.component';
+import { ParentComponent } from './parent/parent.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -103,6 +106,24 @@ const routes: Routes = [
       },
       {
         path: 'createtask', component:CreatetaskComponent
+      },
+      {
+        path: 'createproduct', component:CreateproductComponent
+      },
+      {
+        path:'product', component:ProductComponent
+      },
+      {
+        path:'parent', component:ParentComponent
+      },
+      {
+        path: "edit-vehicle/:id", component: CreatevehicleComponent
+      },
+      {
+        path:"edit-student/:id",component:CreatestudentComponent
+      },
+      {
+        path: 'edit-account/:id' , component:CreateaccountComponent
       }
     ],
   },
