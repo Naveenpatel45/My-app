@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CommonService } from '../common.service';
 
 @Component({
   selector: 'app-sibling1',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./sibling1.component.css']
 })
 export class Sibling1Component {
+constructor(private _commonService:CommonService){
 
+}
+add(){
+  this._commonService.setValue()
+}
 }

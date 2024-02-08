@@ -39,6 +39,12 @@ import { ProductComponent } from './product/product.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { Sibling1Component } from './sibling1/sibling1.component';
+import { Sibling2Component } from './sibling2/sibling2.component';
+import { SiblingsComponent } from './siblings/siblings.component';
+import { CalculateComponent } from './calculate/calculate.component';
+import { InputComponent } from './input/input.component';
+import { DisplayComponent } from './display/display.component';
+import { OperationsComponent } from './operations/operations.component';
 
 @NgModule({
   declarations: [
@@ -76,7 +82,13 @@ import { Sibling1Component } from './sibling1/sibling1.component';
     ProductComponent,
     ParentComponent,
     ChildComponent,
-    Sibling1Component
+    Sibling1Component,
+    Sibling2Component,
+    SiblingsComponent,
+    CalculateComponent,
+    InputComponent,
+    DisplayComponent,
+    OperationsComponent
   ],
   imports: [
     BrowserModule,

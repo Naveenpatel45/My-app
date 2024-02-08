@@ -1,0 +1,13 @@
+
+<div class="top">
+    <label>NUM 1 :</label>
+    <input type="number" [(ngModel)]="a"> <br>
+    <label>NUM 2 :</label>
+    <input type="number"  [(ngModel)]="b">
+</div>
+
+<div class="bottom">
+    <app-operations (operationEvent)="catch($event)">
+
+    </app-operations>
+</div>

@@ -33,6 +33,8 @@ import { CreatetaskComponent } from './createtask/createtask.component';
 import { CreateproductComponent } from './createproduct/createproduct.component';
 import { ProductComponent } from './product/product.component';
 import { ParentComponent } from './parent/parent.component';
+import { SiblingsComponent } from './siblings/siblings.component';
+import { CalculateComponent } from './calculate/calculate.component';
 
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
@@ -124,7 +126,9 @@ const routes: Routes = [
       },
       {
         path: 'edit-account/:id' , component:CreateaccountComponent
-      }
+      },
+      {path: 'siblings', component:SiblingsComponent},
+      {path:'calculate', component:CalculateComponent}
     ],
   },
   { path: '', component: LoginComponent },
