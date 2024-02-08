@@ -38,6 +38,7 @@ import { CreateproductComponent } from './createproduct/createproduct.component'
 import { ProductComponent } from './product/product.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { Sibling1Component } from './sibling1/sibling1.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +75,8 @@ import { ChildComponent } from './child/child.component';
     CreateproductComponent,
     ProductComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    Sibling1Component
   ],
   imports: [
     BrowserModule,

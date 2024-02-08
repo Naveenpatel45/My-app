@@ -12,3 +12,4 @@ export class PhotosService {
     return this._httpCLient.get("https://api.imgflip.com/get_memes")
   }
 }
+ 

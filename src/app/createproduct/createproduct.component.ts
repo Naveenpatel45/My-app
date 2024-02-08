@@ -17,7 +17,7 @@ export class CreateproductComponent {
     freeDelivery: new FormControl(),
     image: new FormControl("", [Validators.required]),
 
-    warrantyek: new FormGroup({
+    warranty: new FormGroup({
       eligible: new FormControl("", [Validators.required]),
       months: new FormControl("", [Validators.required, Validators.min(0)])
     }),
